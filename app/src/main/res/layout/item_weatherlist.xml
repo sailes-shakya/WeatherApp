@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="5dp"
+    app:cardCornerRadius="4dp"
+    app:cardUseCompatPadding="true"
+    android:orientation="vertical">
+    <LinearLayout
+        android:background="?selectableItemBackgroundBorderless"
+        android:padding="5dp"
+        android:id="@+id/layout"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:orientation="vertical" >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/date"
+        android:layout_alignParentRight="true"
+        android:lines="1"
+        android:text="Date"
+        android:textSize="13dp"
+        />
+
+    <TextView
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temp:"
+        android:textSize="13dp"
+        android:id="@+id/tem"/>
+
+</RelativeLayout>
+
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weather"
+        android:textSize="15dp"
+        android:text="Raining"/>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/desc"
+            android:textSize="15dp"
+            android:text="Raining"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+</layout>
